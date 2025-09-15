@@ -1,172 +1,177 @@
 /* ========== CSS Variables ========== */
 :root {
---primary-color: #055a05; /* forest green */
---secondary-color: #f4a261; /* warm sand */
---accent1-color: #264653; /* dark slate blue */
---accent2-color: #e9926a; /* light golden yellow */
---heading-font: "Times New Roman", Georgia, serif;
---body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #055a05; /* forest green */
+  --secondary-color: #f4a261; /* warm sand */
+  --accent1-color: #264653; /* dark slate blue */
+  --accent2-color: #e9926a; /* light golden yellow */
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
 /* ========== Reset Box Model ========== */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ========== Body Styling ========== */
 body {
-font-family: var(--body-font);
-color: var(--accent1-color);
-background-color: #fff;
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fff;
 }
 
 /* ========== Layout Width ========== */
-header, main, footer {
-width: 840px;
-margin: 0 auto;
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
 /* ========== Headings ========== */
-h1, h2 {
-font-family: var(--heading-font);
-color: var(--primary-color);
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 /* ========== Consistent Spacing ========== */
-nav, p, section, article {
-margin: 16px;
-padding: 8px;
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* ========== Header & Navigation ========== */
 header {
-background-color: var(--primary-color);
-color: var(--accent2-color);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 header img {
-max-height: 80px;
+  max-height: 80px;
 }
 
 header nav ul {
-list-style: none;
-display: flex;
-gap: 16px;
+  list-style: none;
+  display: flex;
+  gap: 16px;
 }
 
 header nav a {
-color: var(--accent2-color);
-text-decoration: none;
-font-weight: bold;
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 header nav a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ========== Hero Section ========== */
 .hero {
-position: relative;
-text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .hero img {
-width: 100%;
-height: auto;
-display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero h1 {
-position: absolute;
-top: 20%;
-left: 50%;
-transform: translateX(-50%);
-background-color: rgba(255, 255, 255, 0.7);
-padding: 10px 20px;
-border-radius: 8px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
 .hero article {
-background-color: var(--secondary-color);
-color: var(--accent1-color);
-text-align: left;
-margin: 20px auto;
-border-radius: 8px;
-padding: 10px;
-max-width: 600px;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  text-align: left;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 600px;
 }
 
 /* ========== Footer ========== */
 footer {
-background-color: var(--primary-color);
-color: var(--accent2-color);
-text-align: center;
-padding: 10px;
-margin-top: 20px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .socialmedia {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .socialmedia a {
-text-decoration: none;
-margin: 0 8px;
+  text-decoration: none;
+  margin: 0 8px;
 }
 
 .socialmedia img {
-width: 30px;
-height: 30px;
-vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
-	
+
 /* ========== Hero Section with Overlay ========== */
 .hero {
-position: relative;
+  position: relative;
 }
 
 .hero img {
-display: block;
-width: 100%;
-height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
-position: absolute;
-top: 20px;
-left: 0;
-width: 100%;
-padding: 16px;
-text-align: center;
-opacity: 0.85;
-background-color: var(--accent1-color);
-color: #fff;
-font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 2rem;
 }
 
 .hero article {
-position: absolute;
-bottom: 20px;
-left: 50%;
-transform: translateX(-50%);
-background-color: rgba(255, 255, 255, 0.85);
-color: var(--accent1-color);
-padding: 16px;
-max-width: 600px;
-border-radius: 8px;
-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--accent1-color);
+  padding: 16px;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .hero article img {
-float: right;
-width: 125px;
-margin: 0 0 10px 10px;
-border-radius: 6px;
+  float: right;
+  width: 125px;
+  margin: 0 0 10px 10px;
+  border-radius: 6px;
 }
-	
